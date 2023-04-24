@@ -1,5 +1,9 @@
 # Scraper
 언론사별 최신 기사 스크랩
+- JTBC
+- SBS
+- NEWSIS
+- NOCUT
 
 ## Crontab -e
 */5 * * * * /opt/conda/bin/python /workspace/Scraper/main.py --scraping_task jtbc --path_to_data /workspace/Scraper/jtbc_data --latest_config config.json > /workspace/Scraper/jtbc_cron.log 2>&1
