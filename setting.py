@@ -25,7 +25,7 @@ class Arguments():
     def parse(self):
         args = self.parser.parse_args()
         self.print_args(args)
-
+        
         return args
 
 class Setting():
@@ -39,7 +39,7 @@ class Setting():
 
         _logger.addHandler(stream_handler)
         _logger.setLevel(logging.DEBUG)
-
+        
         return _logger
 
     def run(self):
@@ -47,4 +47,5 @@ class Setting():
         parser.add_type_of_processing()
 
         args = parser.parse()
+        
         return args
